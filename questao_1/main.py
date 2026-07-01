@@ -59,9 +59,11 @@ def cliente():
             break
 
     print("-"*100)
-    print("FIDELIDADE E IDADE DO CLIENTE")
+    print("CLIENTES CADASTRADOS")
+    print("-" * 60)
     for i, c in enumerate(pessoa, start=1):
-            print(f" {i}. {cliente[fidelidade]} | {cliente[idade]}")
+        fiel = "Sim" if c["fidelidade"] == "s" else "Não"
+        print(f"  {i}. Fidelidade: {fiel} | Idade: {c['idade']} anos")
 
 if __name__ == "__main__":
     cliente()
