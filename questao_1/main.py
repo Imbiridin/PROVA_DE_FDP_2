@@ -1,21 +1,24 @@
+compra = list()
 
+def vendas(produto, categoria, valor):
+    while True:
 
-while True:
+        print("-"*100)
+        print("VENDA")
+        print("-"*100)
 
-    compra = [(produto, categoria, valor)]
+        produto = input("Digite o nome do produto: ")
+        categoria = input("Digite a categoria do produto: ")
+        valor = float(input("Digite o valor do produto: "))
 
-    produto = input("Digite o nome do produto: ")
-    compra.append(produto)
-    categoria = input("Digite a categoria do produto: ")
-    compra.append(categoria)
-    valor = float(input("Digite o valor do produto: "))
-    compra.append(valor)
+        
+        compra.append(produto, categoria, valor)
+        
 
-    
-    continuar = input("Deseja continuar?(s/n): ").lower()
+        print("-"*100)
+        continuar = input("Deseja continuar?(s/n): ").lower()
 
-    if continuar == "n":
-        break
+        if continuar == "n":
+            break
 
-    print(compra)
-    
+print(vendas)
