@@ -1,14 +1,3 @@
-compras = [
-
-    ("Banana", "fruta", 8.50),
-
-    ("Arroz", "mercado", 25.00),
-
-    ("Tomate", "verdura", 12.00),
-
-    ("Sabão", "limpeza", 18.00)
-
-]
 
 def valor_gasto(compras):
     total = 0
@@ -19,5 +8,16 @@ def valor_gasto(compras):
     return total
 
 if __name__ == "__main__":
+
+    compras = [
+
+    ("Banana", "fruta", 8.50),
+
+    ("Arroz", "mercado", 25.00),
+
+    ("Tomate", "verdura", 12.00),
+
+    ("Sabão", "limpeza", 18.00) ]
+
     total = valor_gasto(compras)
     print(f"Valor total gasto em hortifrúti: R${total:.2f}")
